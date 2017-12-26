@@ -1,0 +1,14 @@
+html
+  head
+    title
+  body
+    script.
+      function download(name) {
+      location.href = "/download_vid/"+name
+      }
+  h1
+    ul
+    each v in vids
+      li #{v}
+      button(type='button', ,='', onclick='download(\''+v+'\')') Download 
+      br

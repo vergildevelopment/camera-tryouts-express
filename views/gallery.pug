@@ -1,0 +1,19 @@
+html
+  head
+    title
+  body
+    script.
+      function download(name) {
+      location.href = "/download/"+name
+      }
+      function view(name) {
+      location.href = "/open/"+name
+      }
+  h1
+    ul
+    each image in images
+      li
+        img(src=image, width='300')
+      button(type='button', ,='', onclick='download(\''+image+'\')') Download
+      button(type='button', ,='', onclick='view(\''+image+'\')') Full picture
+      br

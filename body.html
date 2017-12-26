@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Blahblah</h1>
+<button type="button", name = "gal", onclick="gal()">Gallery</button>
+<br>
+<button type="button", name = "pic", onclick="pic()">take pic</button>
+<br>
+<button type="button", name = "vid", onclick="vid()">take vid</button>
+<br>
+<button type="button", name = "vid", onclick="show_vid()">download videos</button>
+<br>
+</html>
+<p id="demo"></p>
+<script>
+function gal() {
+    location.href = "/gallery"
+}
+
+function pic() {
+    location.href = "/newpicture"
+}
+
+function vid() {
+    location.href = "/newvideo"
+}
+
+function show_vid() {
+    location.href = "/videos"
+}
+
+</script>
+</body>
+</html> 
